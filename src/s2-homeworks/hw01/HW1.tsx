@@ -32,8 +32,8 @@ export type MsType = {
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        avatar: 'https://theimgstudio.com/wp-content/uploads/2018/06/Twitter_Cover-Blue.jpg', // можно менять
+        name: 'Incubator',  // можно менять
     },
     message: {
         text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
@@ -43,7 +43,7 @@ export const message0: MessageType = {
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
+        avatar: 'https://theimgstudio.com/wp-content/uploads/2018/06/Twitter_Cover-Blue.jpg', // можно менять
         name: 'Friend Name', // можно менять
     },
     message: {
