@@ -50,9 +50,6 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         filtered =  affairs.filter((affair) => affair.priority === filter)
         return filtered
     }
-    if(filter === 'all') {
-        return filtered
-    }
     return filtered
 
 }
@@ -61,7 +58,7 @@ export const deleteAffair = (affairs: AffairType[], id: number): AffairType[] =>
 
 function HW2 () {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
-    const [filter, setFilter] = useState<FilterType>('high')
+    const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
