@@ -50,6 +50,9 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         filtered =  affairs.filter((affair) => affair.priority === filter)
         return filtered
     }
+    if(filter === 'all') {
+        return filtered
+    }
     return filtered
 
 }
